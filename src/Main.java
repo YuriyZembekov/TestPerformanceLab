@@ -1,4 +1,5 @@
 import dayone.DayOne;
+import daythree.DayThree;
 import daytwo.DayTwo;
 
 import java.net.URISyntaxException;
@@ -9,6 +10,7 @@ public class Main {
     public static void main(String[] args) throws URISyntaxException {
         startDayOne();
         startDayTwo();
+        startDayThree();
     }
     private static void startDayOne(){
         System.out.println("Start day 1");
@@ -25,5 +27,11 @@ public class Main {
         System.out.println("End day 2");
         System.out.println();
     }
-    private static void startDayThree(){}
+    private static void startDayThree(){
+        System.out.println("Start day 3");
+        DayThree.startTaskOne();
+        DayThree.startTaskTwo();
+        System.out.println("End day 3");
+        System.out.println();
+    }
 }
